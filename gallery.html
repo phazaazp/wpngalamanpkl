@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri PKL</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Menyesuaikan ukuran dan bentuk gambar */
+        .gallery-grid img {
+            width: 300px; /* Ukuran gambar 300px */
+            height: 300px; /* Tinggi gambar 300px */
+            object-fit: cover; /* Memastikan gambar terpotong secara proporsional */
+            border-radius: 15px; /* Sudut tumpul */
+            margin: 5px; /* Jarak antar gambar */
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Menyesuaikan kolom gambar dengan lebar yang cukup */
+            gap: 10px; /* Jarak antar gambar */
+        }
+
+        /* Gaya untuk video */
+        .video-section {
+            text-align: center; /* Menyusun video di tengah */
+            margin-top: 20px;
+        }
+
+        video {
+            width: 80%; /* Menyesuaikan lebar video */
+            height: auto; /* Menjaga aspek rasio video */
+            border-radius: 15px; /* Sudut tumpul */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Galeri PKL</h1>
+        </div>
+
+        <div class="header-image">
+            <img src="logoti.jpg" alt="Logo Image" class="top-right-img">
+            <img src="smk.png" alt="Logo Image" class="top-right-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Tentang Tim Kami</a></li>
+                <li><a href="pengalaman.html">Pengalaman PKL</a></li>
+                <li><a href="gallery.html">Galeri</a></li> <!-- Perbaiki jika file-nya benar bernama gallery.html -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h2>Foto-foto Kegiatan PKL</h2>
+            <div class="gallery-grid">
+                <img src="foto1.jpeg" alt="Kegiatan PKL 1">
+                <img src="foto2.jpeg" alt="Kegiatan PKL 2">
+                <img src="foto3.jpeg" alt="Kegiatan PKL 3">
+                <img src="foto4.jpeg" alt="Kegiatan PKL 4">
+                <img src="foto5.jpeg" alt="Kegiatan PKL 5">
+                <img src="foto6.jpeg" alt="Kegiatan PKL 6">
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Video Kegiatan PKL 1</h2>
+            <video controls>
+                <source src="videoo.mp4" type="video/mp4">
+                <source src="vidio1.mp4.mp4" type="video/webm">
+            </video>
+
+            <h2>Video Kegiatan PKL 2</h2>
+            <video controls>
+                <source src="viideo.mp4" type="video/mp4">
+                <source src="vidioo2.mp4.mp4" type="video/webm">
+            </video>
+
+            <p><a href="gallery.html">Kembali ke Galeri</a></p> <!-- Perbaiki jika file-nya benar bernama gallery.html -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pengalaman PKL - Jurusan RPL</p>
+    </footer>
+</body>
+</html>
